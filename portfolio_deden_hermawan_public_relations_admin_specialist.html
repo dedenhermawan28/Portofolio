@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deden Hermawan - Public Relations & Administrative Specialist</title>
+    
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            50: '#f0f4f9',
+                            100: '#e1e9f4',
+                            200: '#c3d3e8',
+                            300: '#94b2d8',
+                            400: '#5f8bc3',
+                            500: '#3a68ab',
+                            600: '#284f8d',
+                            700: '#1e3e71',
+                            800: '#0f274a',
+                            900: '#0b1d38',
+                            950: '#061021',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar and subtle background grid utilities */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0f274a;
+        }
+
+        .bg-grid-pattern {
+            background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+            background-size: 24px 24px;
+        }
+
+        .bg-grid-dots-dark {
+            background-image: radial-gradient(#334155 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-navy-800 selection:text-white flex flex-col min-h-screen relative overflow-x-hidden">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-navy-900 via-navy-800 to-navy-700 text-white flex items-center justify-center font-extrabold text-lg shadow-md group-hover:scale-105 transition-transform duration-300">
+                    DH
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-slate-900 text-lg tracking-tight group-hover:text-navy-700 transition">Deden Hermawan</span>
+                    <span class="text-[11px] text-slate-500 font-semibold tracking-wider uppercase">PR & Admin Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Items -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold">
+                <a href="#about" class="text-slate-600 hover:text-navy-800 transition-colors py-1">Tentang Saya</a>
+                <a href="#experience" class="text-slate-600 hover:text-navy-800 transition-colors py-1">Pengalaman</a>
+                <a href="#skills" class="text-slate-600 hover:text-navy-800 transition-colors py-1">Keahlian</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-navy-800 text-white hover:bg-navy-700 transition-all shadow-md hover:shadow-lg active:scale-95">Hubungi Saya</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" type="button" class="md:hidden p-2.5 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-lg transition-all duration-300">
+            <a href="#about" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100 hover:text-navy-800">Tentang Saya</a>
+            <a href="#experience" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100 hover:text-navy-800">Pengalaman & Proyek</a>
+            <a href="#skills" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100 hover:text-navy-800">Keahlian</a>
+            <a href="#contact" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-white bg-navy-800 hover:bg-navy-700 text-center shadow-md">Hubungi Saya</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative py-16 md:py-24 bg-gradient-to-b from-white via-slate-50/80 to-slate-100/90 bg-grid-pattern overflow-hidden border-b border-slate-200/60">
+        
+        <!-- Decorative Ambient Light Blobs & Geometric Accents -->
+        <div class="absolute top-10 -left-20 w-96 h-96 bg-navy-200/50 rounded-full filter blur-3xl opacity-70 pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-100/60 rounded-full filter blur-3xl opacity-80 pointer-events-none"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-navy-50/30 via-slate-100/40 to-transparent rounded-full filter blur-2xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Tagline Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-navy-50/90 border border-navy-200/80 text-navy-800 text-xs sm:text-sm font-bold tracking-wide shadow-xs">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 absolute"></span>
+                        <span class="ml-1 text-slate-700 font-medium">Public Relations & Admin Specialist</span>
+                    </div>
+                    
+                    <!-- Headline with Tagline prompt: Building Connections, Shaping Perceptions -->
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.15]">
+                        Building Connections, <br class="hidden sm:inline" />
+                        <span class="bg-gradient-to-r from-navy-900 via-navy-800 to-navy-600 bg-clip-text text-transparent underline decoration-navy-300 decoration-wavy decoration-2">Shaping Perceptions</span>
+                    </h1>
+                    
+                    <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Halo! Saya <span class="font-bold text-slate-900">Deden Hermawan</span>, Lulusan S1 Ilmu Komunikasi Humas UIN Sunan Gunung Djati Bandung (<span class="font-bold text-navy-800 bg-navy-50 px-2 py-0.5 rounded border border-navy-100">IPK 3.92 Cumlaude</span>). Berfokus pada pengelolaan komunikasi publik, protokoler, event management, dan tata kelola administrasi digital secara terstruktur.
+                    </p>
+
+                    <!-- Fast Info Badges -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-3 text-xs sm:text-sm text-slate-600 pt-1">
+                        <div class="flex items-center gap-2 px-3.5 py-2 bg-white/90 backdrop-blur-sm border border-slate-200/80 rounded-xl shadow-xs">
+                            <i class="fa-solid fa-building-columns text-navy-700"></i>
+                            <span class="font-semibold text-slate-800">Eks Museum Geologi & PT PINDAD</span>
+                        </div>
+                        <div class="flex items-center gap-2 px-3.5 py-2 bg-white/90 backdrop-blur-sm border border-slate-200/80 rounded-xl shadow-xs">
+                            <i class="fa-solid fa-location-dot text-navy-700"></i>
+                            <span class="font-medium text-slate-700">Bandung, Jawa Barat</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-navy-800 hover:bg-navy-700 text-white font-bold text-center transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center gap-2 text-sm sm:text-base">
+                            <i class="fa-solid fa-paper-plane text-sm"></i>
+                            <span>Hubungi Saya</span>
+                        </a>
+                        <a href="#experience" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-bold border border-slate-300/80 text-center transition-all shadow-sm hover:shadow hover:-translate-y-0.5 flex items-center justify-center gap-2 text-sm sm:text-base">
+                            <i class="fa-solid fa-briefcase text-navy-800 text-sm"></i>
+                            <span>Lihat Portofolio</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column: User Photo & Badge Cards -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="relative w-full max-w-sm sm:max-w-md flex justify-center">
+                        
+                        <!-- Glowing Backlight -->
+                        <div class="absolute -inset-2 bg-gradient-to-r from-navy-800 to-navy-600 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition"></div>
+
+                        <!-- Card Wrapper -->
+                        <div class="relative bg-white/90 backdrop-blur-md border border-slate-200/90 rounded-3xl p-6 shadow-2xl w-full flex flex-col items-center">
+                            
+                            <!-- Profile Photo Container -->
+                            <div class="relative mb-5 group w-full flex justify-center">
+                                <div class="w-52 h-68 sm:w-60 sm:h-80 rounded-2xl overflow-hidden border-4 border-white shadow-xl bg-slate-900 ring-2 ring-navy-800/30 relative flex items-center justify-center">
+                                    <!-- User Photo (Rendered from 4x6 (2) (1).jpg) -->
+                                    <img src="4x6 (2) (1).jpg" 
+                                         alt="Foto Deden Hermawan" 
+                                         class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105 relative z-10"
+                                         onerror="this.style.display='none'; document.getElementById('photo-fallback').classList.remove('hidden');">
+                                    
+                                    <!-- Fallback Card jika file gambar tidak dalam direktori lokal saat preview -->
+                                    <div id="photo-fallback" class="hidden absolute inset-0 w-full h-full bg-gradient-to-b from-navy-950 via-navy-900 to-slate-900 text-white flex flex-col items-center justify-center p-6 text-center z-0">
+                                        <div class="w-24 h-24 rounded-2xl bg-gradient-to-tr from-navy-700 to-navy-500 border-2 border-navy-400 flex items-center justify-center text-3xl font-black text-white shadow-lg mb-3">
+                                            DH
+                                        </div>
+                                        <span class="text-sm font-bold tracking-wide text-slate-100">Deden Hermawan</span>
+                                        <span class="text-[11px] text-navy-300 mt-1">S1 Ilmu Komunikasi (Humas)</span>
+                                        <div class="mt-4 px-3 py-1.5 rounded-xl bg-navy-800/90 border border-navy-700 text-[10px] text-emerald-400 font-medium flex items-center gap-1.5">
+                                            <i class="fa-solid fa-folder-open text-xs"></i>
+                                            <span>Pastikan file <b>4x6 (2) (1).jpg</b> berada di folder yang sama</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Floating Availability Badge -->
+                                <div class="absolute -bottom-3 -right-1 sm:right-2 bg-navy-800 text-white px-3.5 py-1.5 rounded-xl border-2 border-white shadow-lg flex items-center gap-2 text-xs font-bold z-20">
+                                    <span class="relative flex h-2.5 w-2.5">
+                                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                                    </span>
+                                    <span>Siap Bekerja</span>
+                                </div>
+                            </div>
+
+                            <!-- User Info -->
+                            <h2 class="text-2xl font-black text-slate-900 tracking-tight">Deden Hermawan</h2>
+                            <p class="text-xs sm:text-sm font-semibold text-navy-700 mt-1">S1 Ilmu Komunikasi (Humas) UIN SGD</p>
+                            
+                            <!-- Key Stats Badge Strip -->
+                            <div class="grid grid-cols-2 gap-3 w-full mt-5 pt-4 border-t border-slate-100 text-center">
+                                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                                    <span class="block text-xs text-slate-500 font-medium">Predikat IPK</span>
+                                    <span class="text-sm font-extrabold text-navy-800">3.92 (Cumlaude)</span>
+                                </div>
+                                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                                    <span class="block text-xs text-slate-500 font-medium">Pengalaman</span>
+                                    <span class="text-sm font-extrabold text-navy-800">BUMN & Humas ESDM</span>
+                                </div>
+                            </div>
+
+                            <!-- Social / Quick Contacts -->
+                            <div class="w-full flex items-center justify-center gap-3 mt-4">
+                                <a href="mailto:dedenhermawan.humas@gmail.com" title="Email Deden" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-navy-800 hover:text-white text-slate-700 flex items-center justify-center transition-colors">
+                                    <i class="fa-regular fa-envelope text-sm"></i>
+                                </a>
+                                <a href="https://wa.me/6285175280532" target="_blank" title="WhatsApp Deden" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-700 flex items-center justify-center transition-colors">
+                                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/deden-hermawan-2b3967314" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-navy-800 hover:text-white text-slate-700 flex items-center justify-center transition-colors">
+                                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 md:py-24 bg-white relative overflow-hidden">
+        
+        <!-- Decorative subtle background accents -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-slate-100 rounded-full filter blur-3xl opacity-80 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-navy-800 font-bold text-xs uppercase tracking-widest bg-navy-50 px-3.5 py-1.5 rounded-full border border-navy-100">Profil & Dedikasi</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Komunikasi Strategis & Efisiensi Administrasi</h2>
+                <p class="text-slate-500 text-sm sm:text-base mt-2">Mengkombinasikan keahlian *Public Relations* dengan disiplin tata kelola dokumen yang presisi.</p>
+                <div class="w-16 h-1 bg-navy-800 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+                
+                <!-- Main Narrative Column -->
+                <div class="lg:col-span-7 space-y-5 text-slate-600 leading-relaxed text-base flex flex-col justify-between">
+                    <div class="bg-slate-50/80 p-6 sm:p-7 rounded-2xl border border-slate-200/80 shadow-xs space-y-4">
+                        <p class="text-slate-800 font-medium">
+                            Saya adalah lulusan S1 Ilmu Komunikasi dengan konsentrasi <span class="text-navy-800 font-bold">Hubungan Masyarakat (Humas)</span> dari UIN Sunan Gunung Djati Bandung dengan predikat <span class="text-navy-800 font-bold">Cumlaude (IPK 3,92/4,00)</span>.
+                        </p>
+                        <p class="text-sm sm:text-base text-slate-600">
+                            Memiliki pengalaman profesional langsung di instansi pemerintah pusat (<span class="font-semibold text-slate-800">Museum Geologi Kementerian ESDM</span>) dan BUMN terkemuka (<span class="font-semibold text-slate-800">PT PINDAD</span>). Saya terbiasa mengolah pesan publik yang efektif, menyusun *content planning*, memandu acara resmi (*Master of Ceremony*), hingga manajemen kearsipan digital.
+                        </p>
+                        <p class="text-sm sm:text-base text-slate-600">
+                            Selain itu, saya berpengalaman sebagai Asisten Dosen pada mata kuliah *Periklanan & Komunikasi Bisnis* serta aktif dalam perancangan media edukasi interaktif publik.
+                        </p>
+                    </div>
+
+                    <!-- Highlight Pillars Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-2xl border border-slate-200 bg-white shadow-xs flex items-start gap-3 hover:border-navy-300 transition">
+                            <div class="p-3 rounded-xl bg-navy-800 text-white shrink-0 shadow-xs">
+                                <i class="fa-solid fa-bullhorn text-base"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Public Speaking & Talent</h4>
+                                <p class="text-xs text-slate-500 mt-1">MC Auditorium, Tour Guide Edukatif, & Talent Media Sosial.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl border border-slate-200 bg-white shadow-xs flex items-start gap-3 hover:border-navy-300 transition">
+                            <div class="p-3 rounded-xl bg-navy-800 text-white shrink-0 shadow-xs">
+                                <i class="fa-solid fa-folder-tree text-base"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Tata Kelola Administrasi</h4>
+                                <p class="text-xs text-slate-500 mt-1">Pengarsipan digital & fisik, pembuatan RAB, & notulensi rapat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Timeline Box -->
+                <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 via-navy-900 to-navy-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between relative overflow-hidden bg-grid-dots-dark">
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2 border-b border-navy-800 pb-4">
+                            <i class="fa-solid fa-graduation-cap text-navy-300"></i>
+                            <span>Pendidikan Formal</span>
+                        </h3>
+
+                        <div class="space-y-6">
+                            <!-- Higher Edu -->
+                            <div class="relative pl-6 border-l-2 border-navy-500 space-y-1">
+                                <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-navy-400 ring-4 ring-navy-900"></span>
+                                <div class="flex justify-between items-center flex-wrap gap-1">
+                                    <span class="text-xs font-extrabold text-navy-200 bg-navy-800/80 px-2.5 py-0.5 rounded border border-navy-700">2021 - 2025</span>
+                                    <span class="text-xs font-black text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800">IPK 3.92</span>
+                                </div>
+                                <h4 class="font-bold text-white text-base mt-1">UIN Sunan Gunung Djati Bandung</h4>
+                                <p class="text-xs text-slate-300 font-medium">S1 Ilmu Komunikasi (Konsentrasi Humas)</p>
+                                <p class="text-xs text-slate-400 mt-1">Mentor PRO 2023, Koordinator Protokol Peresmian, Koordinator Event Management (7 Bulan).</p>
+                            </div>
+
+                            <!-- Senior High School -->
+                            <div class="relative pl-6 border-l-2 border-navy-700 space-y-1">
+                                <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-slate-500 ring-4 ring-navy-900"></span>
+                                <div class="flex justify-between items-center flex-wrap gap-1">
+                                    <span class="text-xs font-semibold text-slate-300 bg-slate-800 px-2 py-0.5 rounded">SMA TELKOM BANDUNG</span>
+                                    <span class="text-xs font-bold text-slate-300">Nilai 93.37</span>
+                                </div>
+                                <h4 class="font-bold text-white text-base mt-1">Jurusan IPS</h4>
+                                <p class="text-xs text-slate-400 mt-1">Duta Hukum & HAM 2019/2020, Peserta KSN Ekonomi, Lomba Speech & Quizizz Bahasa Prancis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-navy-800/80 text-xs text-navy-200 flex items-center justify-between">
+                        <span><i class="fa-solid fa-award mr-1 text-amber-400"></i> Lulusan Cumlaude</span>
+                        <span>Akreditasi Unggul</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section id="experience" class="py-16 md:py-24 bg-slate-100/70 bg-grid-pattern border-y border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-navy-800 font-bold text-xs uppercase tracking-widest bg-white px-3.5 py-1.5 rounded-full border border-slate-200 shadow-xs">Pengalaman & Rekam Jejak</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Pengalaman Kerja, Volunteer & Proyek</h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">Daftar kontribusi profesional di sektor publik, BUMN, dan proyek strategis.</p>
+                <div class="w-16 h-1 bg-navy-800 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10" id="filter-buttons">
+                <button onclick="filterExperience('all')" class="filter-btn active-filter px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition border border-navy-800 bg-navy-800 text-white shadow-md">
+                    Semua
+                </button>
+                <button onclick="filterExperience('work')" class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition border border-slate-300 bg-white text-slate-700 hover:border-navy-700 shadow-xs">
+                    Pengalaman Kerja
+                </button>
+                <button onclick="filterExperience('volunteer')" class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition border border-slate-300 bg-white text-slate-700 hover:border-navy-700 shadow-xs">
+                    Volunteer & Akademis
+                </button>
+                <button onclick="filterExperience('org')" class="filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition border border-slate-300 bg-white text-slate-700 hover:border-navy-700 shadow-xs">
+                    Organisasi
+                </button>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="experience-grid">
+
+                <!-- Card 1: Museum Geologi PR -->
+                <div class="exp-card work bg-white rounded-3xl border border-slate-200/90 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start gap-2 mb-3">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-navy-50 text-navy-800 border border-navy-100">Feb 2025 - Mar 2025</span>
+                            <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-amber-50 text-amber-800 border border-amber-200">Public Relations</span>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-slate-900">Museum Geologi Bandung</h3>
+                        <p class="text-xs text-slate-500 font-semibold mb-4">Kementerian Energi & Sumber Daya Mineral (ESDM)</p>
+                        
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Mengelola konten publikasi digital, penyusunan *content plan*, konsep visual, & cover.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Master of Ceremony (MC) auditorium & *talent* media publikasi digital.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Pemandu edukasi (*Tour Guide*) koleksi geologi bagi pengunjung umum & pelajar.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Operasional & dokumentasi program Ramadan (Geologi Bercerita & Sarasehan).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Public Speaking</span>
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Content Strategy</span>
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">MC & Tour Guide</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: PT PINDAD Administration -->
+                <div class="exp-card work bg-white rounded-3xl border border-slate-200/90 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start gap-2 mb-3">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-navy-50 text-navy-800 border border-navy-100">Jan 2025 - Feb 2025</span>
+                            <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-blue-50 text-blue-800 border border-blue-200">Administrasi</span>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-slate-900">PT. PINDAD (Persero)</h3>
+                        <p class="text-xs text-slate-500 font-semibold mb-4">BUMN Industri Pertahanan - Bandung</p>
+                        
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Menyusun & mengelola berkas administrasi serta kebutuhan operasional harian divisi.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Penginputan, pembaharuan, & pengelolaan data administrasi secara digital.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Menyiapkan administrasi rapat (agenda, notulensi, presensi, & dokumentasi).</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Pengarsipan dokumen fisik & digital agar mudah dilacak.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Digital Archiving</span>
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">MS Office</span>
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Data Management</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Volunteer Day & Night Museum Geologi (2026) -->
+                <div class="exp-card volunteer bg-white rounded-3xl border border-slate-200/90 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start gap-2 mb-3">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200">2026</span>
+                            <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-purple-50 text-purple-800 border border-purple-200">Volunteer Proyek</span>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-slate-900">Day & Night Museum Geologi</h3>
+                        <p class="text-xs text-slate-500 font-semibold mb-4">Proyek "GeoHazard Connection"</p>
+                        
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs mt-1 shrink-0"></i>
+                                <span>Merancang & membuat game Monopoli interaktif bencana geologi bagi pengunjung.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs mt-1 shrink-0"></i>
+                                <span>Fasilitator & guide yang memandu mekanika permainan edukatif pengunjung.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs mt-1 shrink-0"></i>
+                                <span>Mengelola sistem penukaran poin cenderamata pengunjung secara terdata.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Game Design</span>
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Public Engagement</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Asisten Dosen -->
+                <div class="exp-card volunteer bg-white rounded-3xl border border-slate-200/90 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start gap-2 mb-3">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200">2026</span>
+                            <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-indigo-50 text-indigo-800 border border-indigo-200">Akademis</span>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-slate-900">Asisten Dosen</h3>
+                        <p class="text-xs text-slate-500 font-semibold mb-4">Periklanan & Komunikasi Bisnis</p>
+                        
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs mt-1 shrink-0"></i>
+                                <span>Mendampingi Dosen (Ibu Prita Priantini Chinayah, S.P.T., M.I.Kom.) dalam perkuliahan.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs mt-1 shrink-0"></i>
+                                <span>Pemeriksaan dan evaluasi penilaian tugas mahasiswa secara objektif.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs mt-1 shrink-0"></i>
+                                <span>Mendukung administrasi akademis perkuliahan berjalan lancar.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Komunikasi Bisnis</span>
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Periklanan</span>
+                    </div>
+                </div>
+
+                <!-- Card 5: PRO 2023 Organisasi -->
+                <div class="exp-card org bg-white rounded-3xl border border-slate-200/90 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start gap-2 mb-3">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">Jun 2023 - Oct 2023</span>
+                            <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600">Organisasi</span>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-slate-900">Mentor (PRO 2023)</h3>
+                        <p class="text-xs text-slate-500 font-semibold mb-4">Public Relations Orientation - UIN Bandung</p>
+                        
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Mendampingi & membimbing mahasiswa baru selama orientasi jurusan.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Penghubung utama komunikasi antara panitia pusat dengan peserta.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Mentorship</span>
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Leadership</span>
+                    </div>
+                </div>
+
+                <!-- Card 6: Pure Action Organisasi -->
+                <div class="exp-card org bg-white rounded-3xl border border-slate-200/90 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start gap-2 mb-3">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">Aug 2023 - Dec 2023</span>
+                            <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600">Organisasi</span>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-slate-900">Bendahara Dana Usaha</h3>
+                        <p class="text-xs text-slate-500 font-semibold mb-4">Pure Action (HUT Ilkom UIN Bandung)</p>
+                        
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Menyusun Rencana Anggaran Biaya (RAB) kegiatan dana usaha.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-navy-700 text-xs mt-1 shrink-0"></i>
+                                <span>Merekap keuangan & menyusun laporan pertanggungjawaban (LPJ).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Budgeting (RAB)</span>
+                        <span class="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-semibold">Financial LPJ</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- My Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-navy-800 font-bold text-xs uppercase tracking-widest bg-navy-50 px-3.5 py-1.5 rounded-full border border-navy-100">Keahlian & Kompetensi</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Spesialisasi Kunci & Software</h2>
+                <p class="text-slate-500 text-sm sm:text-base mt-2">Daftar keterampilan teknis dan interpersonal pendukung kinerja.</p>
+                <div class="w-16 h-1 bg-navy-800 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Category 1: Public Relations & Media -->
+                <div class="bg-slate-50/80 border border-slate-200/90 rounded-3xl p-6 sm:p-7 hover:shadow-md transition">
+                    <div class="flex items-center gap-3.5 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-navy-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base">Public Relations</h3>
+                            <p class="text-xs text-slate-500 font-medium">Komunikasi & Media Publik</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-solid fa-microphone text-navy-700"></i> Public Speaking & MC
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-solid fa-compass text-navy-700"></i> Tour Guiding Edukatif
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-solid fa-photo-film text-navy-700"></i> Content Planning & Cover
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-solid fa-camera text-navy-700"></i> Dokumentasi Foto/Video
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Category 2: Event & Keprotokolan -->
+                <div class="bg-slate-50/80 border border-slate-200/90 rounded-3xl p-6 sm:p-7 hover:shadow-md transition">
+                    <div class="flex items-center gap-3.5 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-navy-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base">Event & Protokoler</h3>
+                            <p class="text-xs text-slate-500 font-medium">Manajemen Acara & Proyek</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-solid fa-tasks text-navy-700"></i> Event Management
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-solid fa-clipboard-list text-navy-700"></i> Keprotokolan Acara
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-solid fa-calculator text-navy-700"></i> Penyusunan RAB
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-solid fa-gamepad text-navy-700"></i> Game Edukasi Interaktif
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Category 3: Administrasi & Software -->
+                <div class="bg-slate-50/80 border border-slate-200/90 rounded-3xl p-6 sm:p-7 hover:shadow-md transition">
+                    <div class="flex items-center gap-3.5 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-navy-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base">Administrasi & Office</h3>
+                            <p class="text-xs text-slate-500 font-medium">Tata Kelola Dokumen</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-file-word text-blue-600 text-sm"></i> Microsoft Word
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-file-excel text-emerald-600 text-sm"></i> Microsoft Excel
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-file-powerpoint text-orange-600 text-sm"></i> PowerPoint
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-xs flex items-center gap-2">
+                            <i class="fa-solid fa-box-archive text-navy-700"></i> Digital Archiving
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Soft Skills Banner -->
+            <div class="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-navy-950 via-navy-900 to-navy-800 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-navy-800">
+                <div class="space-y-1 text-center md:text-left">
+                    <h4 class="font-extrabold text-lg text-white">Bahasa & Interpersonal Skills</h4>
+                    <p class="text-xs sm:text-sm text-navy-200">Adaptabilitas tinggi, kerja sama tim, integritas kerja, dan komunikasi antar-budaya.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-2.5">
+                    <span class="px-4 py-1.5 rounded-full bg-white/10 text-white text-xs font-bold backdrop-blur-md border border-white/20">Bahasa Indonesia (Native)</span>
+                    <span class="px-4 py-1.5 rounded-full bg-white/10 text-white text-xs font-bold backdrop-blur-md border border-white/20">Bahasa Inggris (Komunikasi)</span>
+                    <span class="px-4 py-1.5 rounded-full bg-white/10 text-white text-xs font-bold backdrop-blur-md border border-white/20">Bahasa Prancis (Dasar)</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-slate-100/80 bg-grid-pattern border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-navy-800 font-bold text-xs uppercase tracking-widest bg-white px-3.5 py-1.5 rounded-full border border-slate-200 shadow-xs">Kontak Langsung</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Mari Berkolaborasi & Berdiskusi</h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">Terbuka untuk posisi Public Relations, Administrasi, Event Specialist, atau konsultasi proyek.</p>
+                <div class="w-16 h-1 bg-navy-800 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Contact Direct Info Card -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm space-y-6">
+                        <h3 class="text-xl font-bold text-slate-900">Informasi Kontak Deden</h3>
+                        
+                        <div class="space-y-4 text-xs sm:text-sm">
+                            <a href="mailto:dedenhermawan.humas@gmail.com" class="flex items-start gap-4 p-3 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-200">
+                                <div class="w-11 h-11 rounded-2xl bg-navy-50 text-navy-800 flex items-center justify-center shrink-0 font-bold border border-navy-100">
+                                    <i class="fa-solid fa-envelope text-base"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[11px] text-slate-400 font-bold uppercase tracking-wider block">Email Resmi</span>
+                                    <span class="font-bold text-slate-900 hover:text-navy-700 transition">dedenhermawan.humas@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/6285175280532" target="_blank" class="flex items-start gap-4 p-3 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-200">
+                                <div class="w-11 h-11 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 font-bold border border-emerald-100">
+                                    <i class="fa-solid fa-phone text-base"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[11px] text-slate-400 font-bold uppercase tracking-wider block">WhatsApp / Telepon</span>
+                                    <span class="font-bold text-slate-900 hover:text-navy-700 transition">+62 851-7528-0532</span>
+                                </div>
+                            </a>
+
+                            <a href="https://linkedin.com/in/deden-hermawan-2b3967314" target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 p-3 rounded-2xl hover:bg-slate-50 transition border border-transparent hover:border-slate-200">
+                                <div class="w-11 h-11 rounded-2xl bg-navy-50 text-navy-800 flex items-center justify-center shrink-0 font-bold border border-navy-100">
+                                    <i class="fa-brands fa-linkedin-in text-base"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[11px] text-slate-400 font-bold uppercase tracking-wider block">Profil LinkedIn</span>
+                                    <span class="font-bold text-navy-800 hover:underline">linkedin.com/in/deden-hermawan</span>
+                                </div>
+                            </a>
+
+                            <div class="flex items-start gap-4 p-3 rounded-2xl border border-slate-100 bg-slate-50/50">
+                                <div class="w-11 h-11 rounded-2xl bg-navy-50 text-navy-800 flex items-center justify-center shrink-0 font-bold border border-navy-100">
+                                    <i class="fa-solid fa-location-dot text-base"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[11px] text-slate-400 font-bold uppercase tracking-wider block">Alamat Domisili</span>
+                                    <p class="font-semibold text-slate-800 leading-snug">
+                                        Kp. Bojong Koneng, Desa Rancamanyar, Kec. Baleendah, Kab. Bandung, Jawa Barat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+                        <h3 class="text-xl font-bold text-slate-900 mb-6">Kirim Pesan Langsung</h3>
+                        
+                        <form id="contact-form" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-xs font-bold text-slate-700 mb-1.5">Nama Lengkap *</label>
+                                    <input type="text" id="name" required placeholder="Masukkan nama Anda" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:border-navy-700 focus:ring-2 focus:ring-navy-100 transition">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-xs font-bold text-slate-700 mb-1.5">Email Anda *</label>
+                                    <input type="email" id="email" required placeholder="nama@email.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:border-navy-700 focus:ring-2 focus:ring-navy-100 transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-xs font-bold text-slate-700 mb-1.5">Subjek Pesan *</label>
+                                <input type="text" id="subject" required placeholder="Topik atau keperluan Anda" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:border-navy-700 focus:ring-2 focus:ring-navy-100 transition">
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-xs font-bold text-slate-700 mb-1.5">Isi Pesan *</label>
+                                <textarea id="message" rows="4" required placeholder="Tuliskan detail pesan Anda di sini..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:border-navy-700 focus:ring-2 focus:ring-navy-100 transition resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-navy-800 hover:bg-navy-700 text-white font-bold text-xs sm:text-sm transition shadow-lg hover:shadow-xl active:scale-98 flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane text-xs"></i>
+                                <span>Kirim Pesan Sekarang</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Custom Modal/Toast for Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none max-w-sm w-full">
+        <div class="bg-navy-950 text-white p-4 rounded-2xl shadow-2xl border border-navy-700 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-check text-base"></i>
+            </div>
+            <div>
+                <h5 class="text-xs font-bold" id="toast-title">Pesan Terkirim!</h5>
+                <p class="text-[11px] text-slate-300" id="toast-message">Terima kasih telah menghubungi Deden Hermawan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 py-10 border-t border-navy-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <p class="text-xs text-slate-300 font-bold">Deden Hermawan &copy; 2026. All Rights Reserved.</p>
+                <p class="text-[11px] text-slate-500 mt-1">S1 Ilmu Komunikasi (Humas) UIN Sunan Gunung Djati Bandung</p>
+            </div>
+
+            <!-- Back To Top Button -->
+            <a href="#hero" class="p-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-white text-xs font-bold transition border border-navy-800 flex items-center gap-2 shadow-md">
+                <span>Kembali ke Atas</span>
+                <i class="fa-solid fa-arrow-up text-xs"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript Section for Mobile Nav & Experience Filters -->
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Experience Category Filter Action
+        function filterExperience(category) {
+            const cards = document.querySelectorAll('.exp-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Reset Button Styles
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-navy-800', 'text-white', 'border-navy-800', 'shadow-md');
+                btn.classList.add('bg-white', 'text-slate-700', 'border-slate-300', 'shadow-xs');
+            });
+
+            // Activate Target Button
+            event.currentTarget.classList.remove('bg-white', 'text-slate-700', 'border-slate-300', 'shadow-xs');
+            event.currentTarget.classList.add('bg-navy-800', 'text-white', 'border-navy-800', 'shadow-md');
+
+            // Show / Hide Cards
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.classList.remove('hidden');
+                } else {
+                    if (card.classList.contains(category)) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                }
+            });
+        }
+
+        // Contact Form Submission Action
+        const contactForm = document.getElementById('contact-form');
+        const toast = document.getElementById('toast');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show Notification Toast
+            toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            // Reset Form Fields
+            contactForm.reset();
+
+            // Auto Hide Toast
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
